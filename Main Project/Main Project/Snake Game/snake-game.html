@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .head {
+      background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+      border: 2px solid rgb(34, 4, 34);
+      transform: scale(1.02);
+      border-radius: 9px;
+    }
+
+    .snake {
+      background-color: purple;
+      border: .25vmin solid white;
+      border-radius: 12px;
+    }
+
+    .food {
+      background: linear-gradient(red, purple);
+      border: .25vmin solid black;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <div
+    class="min-h-screen flex items-center justify-center gap-6 bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600">
+    <div id="scoreBox" class="absolute top-[9px] right-[100px] text-[29px] font-bold font-serif">Score: 0</div>
+
+    <div id="hiscoreBox" class="absolute top-[39px] right-[63px] text-[29px] font-bold font-serif"> HiScore: 0</div>
+    <div id="board"
+      class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl w-[90vmin] h-[92vmin] border-2 border-black grid [grid-template-rows:repeat(18,1fr)] [grid-template-columns:repeat(18,1fr)]">
+    </div>
+    <div class="w-[29%] flex items-center justify-center">
+      <img src="./snake.png" alt="Snake Game Preview" class="w-full h-[400px]">
+    </div>
+    <section class="flex items-center justify-center">
+    <a href="/main-project.html"
+        class="px-6 py-2 rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white font-semibold shadow hover:scale-105 transition absolute top-[80px] right-[100px]">
+        ⬅ Back
+      </a>
+    </div>
+  </section>
+  </div>
+  
+
+
+  <script src="./snake.js"></script>
+</body>
+
+</html>

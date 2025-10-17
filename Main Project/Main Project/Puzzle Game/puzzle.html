@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avengers Puzzle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans text-center bg-gradient-to-r from-pink-400 to-pink-600">
+  <br>
+
+  <div id="board" class="w-[403px] h-[404px] border-4 border-black  mx-auto flex flex-wrap"></div>
+
+  <h2 class="mt-4 text-lg font-semibold">
+    Turns: <span id="turns" class="text-purple-700 font-bold">0</span>
+    <span class="mx-10"><a href="/main-project.html"
+        class="px-6 py-2 rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white font-semibold shadow hover:scale-105 transition absolute top-[10px] left-[10px]">
+        ⬅ Back
+      </a></span>
+  </h2>
+
+  <div id="pieces" class="w-[1035px] h-[166px] border-4 border-black mx-auto flex flex-wrap mt-4 mb-4"></div>
+
+  <script src="puzzle.js" defer></script>
+</body>
+</html>
